@@ -5,8 +5,11 @@ const HomePage = () => {
     return (
         <Container>
             <h1>
-                Welcome to home page
+                Welcome to SOM
             </h1>
+            <p>
+                Find out where to listen to your favorite albums.
+            </p>
         </Container>
     )
 }

@@ -10,10 +10,14 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    background: linear-gradient(160deg, var(--bg) 70%, var(--primary) 120%) ;
+    background: radial-gradient(circle at 50% -100%, var(--bg) 85%, var(--primary) 120%) ;
     color: var(--text);
     min-height: 100vh;
     font-family: "Consolas", "Menlo", "Ubuntu Mono", monospace;
+  }
+
+  a {
+    text-decoration: none;
   }
 `
 
