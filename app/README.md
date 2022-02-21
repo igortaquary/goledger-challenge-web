@@ -3,11 +3,22 @@
 (This project use node v16.13.0)
 
 1. Go to the project directory
+
+    ```
     cd app
+    ```
+
 2. Install the dependecies (make sure u are using the correct node version)
+
+    ```
     npm install
+    ```
+
 3. Run the app in the develop mode
+
+    ```
     npm start
+    ```
 
 
 ## Available Scripts
