@@ -1,4 +1,4 @@
-import { Button, Container, FormControl, InputLabel, MenuItem, Select, TextField } from "@mui/material";
+import { Button, Container, FormControl, FormControlLabel, InputLabel, MenuItem, Select, Switch, TextField } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Album, updateAsset, createAsset, Artist, StreamingService, searchAssetByName } from "../../service/api";
@@ -95,6 +95,9 @@ const AlbumForm = () => {
                 <TextField id="album-genre" label="Genre" defaultValue={album?.genre}  />
                 <TextField id="album-year" label="Year" defaultValue={album?.year} type="number"  />
                 <TextField id="album-nTracks" label="Number of Tracks" defaultValue={album?.nTracks} type="number" />
+                <div>
+                    <FormControlLabel control={<Switch id="album-explicit" />} label="Explict" />
+                </div>
                 <FormControl fullWidth >
                     <InputLabel>Artist</InputLabel>
                     <Select

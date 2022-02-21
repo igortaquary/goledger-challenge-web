@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, CircularProgress, Container, Fab, IconButton, TextField, Tooltip } from "@mui/material"
+import { Button, Chip, CircularProgress, Container, Fab, IconButton, TextField, Tooltip } from "@mui/material"
 import { Card, CardsContainer, RowContainer, SearchContainer } from "./styles";
 import { Album, deleteAsset, searchAssetByName } from "../../service/api";
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
@@ -94,9 +94,9 @@ const AlbumsPage = () => {
                         <Card key={i}>
                             <RowContainer>
                                 <div>
-                                    <h3>{album.name}</h3>
+                                    <h3>{album.name} {album.explicit && <Chip label="Explicit" />}</h3>
                                     <p>{album.genre}</p>
-                                    <p>{album.explicit && "Explicit"}</p>
+                                    <p>{album.year}</p>
                                 </div>
                                 <div>
                                     <Tooltip title="Edit">
